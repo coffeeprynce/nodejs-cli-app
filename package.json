@@ -1,0 +1,25 @@
+{
+  "name": "commandlineapp",
+  "version": "1.0.0",
+  "description": "command line application",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coffeeprynce/nodejs-cli-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coffeeprynce/nodejs-cli-app/issues"
+  },
+  "homepage": "https://github.com/coffeeprynce/nodejs-cli-app#readme",
+  "dependencies": {
+    "jest": "^29.3.0"
+  }
+}
