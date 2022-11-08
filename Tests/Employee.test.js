@@ -1,42 +1,26 @@
-const employee = require("./lib/employee.js");
+const Employee = require("./lib/employee.js");
 
-class employee {
-    constructor(name, id, email) {
-        this.name = name;
-        this.id = id;
-        this.email = email;
+test("grab new employee", () => {
+const employee = new Employee();
+expect(typeof(employee1)).toBe("object");
+});
 
-    }
-    getName(name) {
-        this.name.forEach(person => {
-            if (person.name === name) {
-                console.log(`success ${person.name}`);
-            } else {
-                console.log(`error ${person.name} not found`);
-            }
-        });
-    }
-    getId(id) {
-        this.id.forEach(person => {
-            if (person.id === id) {
-                console.log(`success ${person.id}`);
-            } else {
-                console.log(`error ${person.id} not found`);
-            }
-        });
-    }
-    getEmail(email) {
-        this.email.forEach(person => {
-            if (person.email === email) {
-                console.log(`success ${person.email}`);
-            } else {
-                console.log(`error ${person.email} not found`);
-            }
-        });
-    }
-    getRole() {
-        console.log(`sucess ${data.input}`);
-    }
-};
+test("getName", () => {
+    const name = "Quang";
+    const employee = new Employee(name);
+    expect(employee.name).toBe(name);
+});
+
+test("getID", () => {
+    const id = "123";
+    const employee = new Employee(id);
+    expect(employee.id).toBe(id);
+});
+
+test("getEmail", () => {
+    const email = "qq@yahoo.com";
+    const employee = new Employee(email);
+    expect(employee.email).toBe(email);
+});
 
 
